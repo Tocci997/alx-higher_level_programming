@@ -22,10 +22,9 @@ int check_cycle(listint_t *list)
 		if (dull == rapid)
 		{
 			return (1);
-
-			dull = dull->next;
-			rapid = rapid->next->next;
 		}
+		dull = dull->next;
+		rapid = rapid->next->next;
 	}
 	return (0);
 }
