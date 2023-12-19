@@ -1,10 +1,11 @@
 #!/usr/bin/python3
+
 def safe_print_division(a, b):
     try:
-        quotent = a / b
+        quotient = a / b
     except (ZeroDivisionError):
-        quotent = None
+        quotient = None
     finally:
-        print("Inside result: {}".format(quotent))
-        return (quotent)
+        print("Inside result: {}".format(quotient))
+        return quotient
 
