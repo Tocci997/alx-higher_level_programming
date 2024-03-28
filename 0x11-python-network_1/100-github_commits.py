@@ -26,7 +26,7 @@ if __name__ == '__main__':
     for element in json:
         if i > 9:
             break
-        par = element.get('par')
+        sha = element.get('sha')
         author = element.get('commit').get('author').get('name')
-        print("{}: {}".format(par, author))
+        print("{}: {}".format(sha, author))
         i += 1
